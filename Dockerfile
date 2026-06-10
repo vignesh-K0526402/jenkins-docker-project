@@ -1,3 +1,3 @@
-git add .
-git commit -m "Rename jenkins to  Jenkinsfile name"
-git push origin main
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
