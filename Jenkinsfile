@@ -21,6 +21,9 @@ pipeline {
             steps{
                 sh 'date'
                 sh 'free -h'
+		sh 'whoami'
+		sh 'pwd'
+		sh 'echo' "hi hello",'whoami'
             }
         }
     }
