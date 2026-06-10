@@ -3,12 +3,12 @@ pipeline {
     stages{
         stage('Checkout'){
             steps{
-                git branch : 'main' , url:""
+                git branch : 'main' , url:'https://github.com/vignesh-K0526402/jenkins-docker-project.git'
             }
         }
         stage("Build Docker Image"){
             steps{
-                sh 'docker build -t docsp'
+                sh 'docker build -t docsapp .'
             }
         }
         stage("Run Container"){
@@ -18,8 +18,8 @@ pipeline {
         }
         stage("System Info"){
             steps{
-                sh 'echo' ,'date'
-                sh 'echo' , 'memory free -h'
+                sh 'date'
+                sh 'memory free -h'
             }
         }
     }
