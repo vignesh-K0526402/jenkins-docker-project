@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Run Container"){
             steps{
-		sh 'docker rm -f docspp-container || true'
+		sh 'docker rm -f docsapp-container || true'
                 sh 'docker run -d --name docsapp-container -p 8081:80 docsapp'
             }
         }
