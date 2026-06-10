@@ -19,13 +19,13 @@ pipeline {
         }
         stage("System Info"){
             steps{
-                sh 'echo' "i completed my project on :"
+                sh 'echo "i completed my project on :" '
 		sh 'date'
-		sh 'echo' "current memory in my system :"
+		sh 'echo "current memory in my system :" '
                 sh 'free -h'
-		sh 'echo' "who am i :"
+		sh 'echo "who am i :" '
 		sh 'whoami'
-		sh  'echo' , "where am i :"
+		sh  'echo "where am i :" '
 		sh 'pwd'
             }
         }
