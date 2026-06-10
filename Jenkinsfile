@@ -23,7 +23,7 @@ pipeline {
                 sh 'free -h'
 		sh 'whoami'
 		sh 'pwd'
-		sh 'echo' "hi hello",'whoami'
+		sh 'echo', "hi hello",'whoami'
             }
         }
     }
